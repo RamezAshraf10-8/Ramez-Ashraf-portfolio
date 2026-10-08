@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Ramez Ashraf | AI & Computer Engineering Portfolio | Machine Learning & Data</title>
+  <meta name="title" content="Ramez Ashraf | AI & Computer Engineering Portfolio">
+  <meta name="description" content="Portfolio of Ramez Ashraf Abdelmoniem, fresh Computer Engineering graduate from BUE specializing in Artificial Intelligence, Computer Vision, Machine Learning, and Data Engineering.">
+  <meta name="keywords" content="Ramez Ashraf, AI Engineer, Machine Learning Engineer, Computer Vision Engineer, Data Analyst, Junior Data Engineer, Software Engineer, BUE Computer Engineering, Python, PyTorch, YOLOv11, OpenCV, MediaPipe, AWS">
+  <meta name="author" content="Ramez Ashraf Abdelmoniem">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/RamezAshraf10-8">
+  <meta property="og:title" content="Ramez Ashraf | AI & Computer Engineering Portfolio">
+  <meta property="og:description" content="Computer Engineering graduate specializing in AI, Machine Learning, Computer Vision, and Cloud Data Solutions. Explore projects, code, and verified credentials.">
+  <meta property="og:image" content="assets/images/profile-portrait.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://github.com/RamezAshraf10-8">
+  <meta property="twitter:title" content="Ramez Ashraf | AI & Computer Engineering Portfolio">
+  <meta property="twitter:description" content="Computer Engineering graduate specializing in AI, Machine Learning, Computer Vision, and Cloud Data Solutions.">
+  <meta property="twitter:image" content="assets/images/profile-portrait.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data for Recruitment & Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ramez Ashraf Abdelmoniem",
+    "jobTitle": "AI & Computer Vision Engineer",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "The British University in Egypt"
+    },
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Computer Vision", "Python", "Data Engineering", "Cloud Computing"],
+    "email": "rameznasr73@gmail.com",
+    "telephone": "+201018189406",
+    "url": "https://github.com/RamezAshraf10-8",
+    "sameAs": [
+      "https://github.com/RamezAshraf10-8",
+      "https://linkedin.com/in/ramez-ashraf-"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Recruiter Announcement & Fast-Track Bar -->
+  <div class="top-recruiter-bar" role="region" aria-label="Recruiter Quick Actions">
+    <div class="container">
+      <div class="recruiter-badge-text">
+        <span class="status-dot"></span>
+        <span><strong>Open to Entry-Level Roles:</strong> AI Engineer • ML Engineer • Computer Vision • Data Analyst • Software</span>
+      </div>
+      <div class="quick-recruiter-actions">
+        <button class="quick-link-btn" onclick="openRecruiterSnapshot()" aria-label="Open 15-Second Recruiter Summary">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          <span>Recruiter 15s Snapshot</span>
+        </button>
+        <button class="quick-link-btn copy-email-btn" aria-label="Copy Email to Clipboard">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          <span>Copy Email</span>
+        </button>
+        <a href="assets/docs/Ramez_Ashraf_CV.pdf" download class="quick-link-btn" aria-label="Download CV PDF">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Ramez Ashraf Portfolio Home">
+        <div class="logo-symbol">RA</div>
+        <div>
+          <span class="logo-text">Ramez Ashraf</span>
+          <span class="logo-sub">Computer Engineering • AI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Controls -->
+      <div class="nav-right-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle theme">
+          <span id="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </span>
+        </button>
+
+        <a href="assets/docs/Ramez_Ashraf_CV.pdf" download class="nav-cta-btn" id="header-cv-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download CV</span>
+        </a>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="home" class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Left Column -->
+          <div class="hero-content-col">
+            <div class="hero-badge-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>Fresh Computer Engineering Graduate • BUE (2026)</span>
+            </div>
+
+            <h1 id="hero-title" class="hero-title">
+              Hi, I'm <span class="text-gradient">Ramez Ashraf</span>
+            </h1>
+
+            <div class="hero-headline">
+              Computer Engineering Graduate | AI & Machine Learning | Data & Software
+            </div>
+
+            <p class="hero-intro">
+              Computer Engineering graduate passionate about Artificial Intelligence, Machine Learning, Data, and Software Development. I enjoy transforming real-world problems into practical technology solutions through programming, data, and intelligent systems.
+            </p>
+
+            <!-- Target Roles Ticker -->
+            <div class="target-roles-wrapper">
+              <span class="target-roles-label">Target Entry-Level Roles</span>
+              <div class="roles-tags" id="hero-roles-tags">
+                <!-- Dynamically populated from data.js -->
+              </div>
+            </div>
+
+            <!-- CTAs -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>View My Projects</span>
+              </a>
+              <a href="assets/docs/Ramez_Ashraf_CV.pdf" download class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download CV</span>
+              </a>
+              <button onclick="openRecruiterSnapshot()" class="btn btn-recruiter">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                <span>15s Recruiter Summary</span>
+              </button>
+              <a href="#contact" class="btn btn-outline">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials">
+              <a href="https://github.com/RamezAshraf10-8" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Ramez Ashraf GitHub Profile" title="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/ramez-ashraf-" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Ramez Ashraf LinkedIn Profile" title="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="mailto:rameznasr73@gmail.com" class="social-icon-btn" aria-label="Send Email to Ramez" title="Send Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+              <button class="social-icon-btn copy-email-btn" aria-label="Copy Email Address" title="Copy Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Right Column (Holographic Profile Card) -->
+          <div class="hero-visual-col">
+            <div class="hero-visual-card">
+              <div class="hero-avatar-wrapper">
+                <img src="assets/images/profile-portrait.jpg" alt="Ramez Ashraf Abdelmoniem - AI & Computer Engineering Graduate" class="hero-avatar-img">
+                <div class="avatar-floating-badge">
+                  <div>
+                    <span class="badge-info-title">Ramez Ashraf</span>
+                    <span class="badge-info-sub">AI & Computer Vision Focus</span>
+                  </div>
+                  <div style="display: flex; align-items: center; gap: 0.4rem;">
+                    <span class="status-dot"></span>
+                    <span style="font-size: 0.75rem; color: #fff; font-weight: 600;">Active</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Highlights in Card -->
+              <div class="card-quick-metrics">
+                <div class="metric-mini-box">
+                  <span class="metric-mini-value">BUE '26</span>
+                  <span class="metric-mini-label">B.Sc. Computer Engineering</span>
+                </div>
+                <div class="metric-mini-box">
+                  <span class="metric-mini-value">100% Acc</span>
+                  <span class="metric-mini-label">Assistive Morse CV System</span>
+                </div>
+                <div class="metric-mini-box">
+                  <span class="metric-mini-value">60+ Hours</span>
+                  <span class="metric-mini-label">AI & Python Training</span>
+                </div>
+                <div class="metric-mini-box">
+                  <span class="metric-mini-value">AWS Cloud</span>
+                  <span class="metric-mini-label">Serverless & Pipelines</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verified Academic & Technical Statistics Strip -->
+        <div class="stats-grid" id="stats-grid-container" aria-label="Candidate Statistics">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section id="about" class="section-padding" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">About Candidate</span>
+          <h2 id="about-title" class="section-title">Engineered for Applied Intelligence</h2>
+          <p class="section-subtitle">
+            A grounded Computer Engineering background combining hardware understanding, robust software architecture, and practical machine learning solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative Details -->
+          <div class="about-card">
+            <p class="about-paragraph">
+              I am a fresh <strong>Computer Engineering graduate from The British University in Egypt (BUE)</strong>. My passion lies at the intersection of <strong>Artificial Intelligence, Computer Vision, Data Analysis, and Systems Engineering</strong>—building intelligent applications that solve real human and business problems.
+            </p>
+            <p class="about-paragraph">
+              Rather than theoretical prototypes, I strive to build <strong>end-to-end, functional systems</strong>. For my graduation project, I trained deep learning instance segmentation models (YOLOv11m-seg) on the CarDD dataset to automate automotive damage inspection and repair estimation, packaging it into a real-time mobile app. For my dissertation, I engineered a computer vision assistive communication system that allows individuals with severe motor impairments to communicate via Morse code using only a standard laptop webcam.
+            </p>
+            <p class="about-paragraph">
+              My hands-on experience also spans <strong>AWS cloud architectures</strong> (Athena, Lambda, S3, QuickSight), <strong>enterprise network security</strong> (Juniper SRX), and <strong>cybersecurity pen-testing</strong>, giving me a solid engineering discipline across the full software lifecycle.
+            </p>
+
+            <div class="about-traits-grid">
+              <div class="trait-box">
+                <div class="trait-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                </div>
+                <div>
+                  <div class="trait-title">Applied Problem Solver</div>
+                  <div class="trait-desc">Focuses on tangible metrics, robustness under real-world noise, and usable UX.</div>
+                </div>
+              </div>
+
+              <div class="trait-box">
+                <div class="trait-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <div class="trait-title">Fast Self-Learner</div>
+                  <div class="trait-desc">Rapidly masters modern architectures from YOLOv11 and PyTorch to Terraform and AWS.</div>
+                </div>
+              </div>
+
+              <div class="trait-box">
+                <div class="trait-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+                <div>
+                  <div class="trait-title">Engineering Rigor</div>
+                  <div class="trait-desc">Solid foundations in data structures, algorithms, and clean modular code.</div>
+                </div>
+              </div>
+
+              <div class="trait-box">
+                <div class="trait-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <div>
+                  <div class="trait-title">Collaborative & Communicative</div>
+                  <div class="trait-desc">Proven team player in academic sprints, cross-functional labs, and client projects.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Academic Profile Card -->
+          <div id="education-card-container">
+            <!-- Dynamically populated from data.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS SECTION
+         ========================================================================== */
+    <section id="skills" class="section-padding" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Technical Toolkit</span>
+          <h2 id="skills-title" class="section-title">Proficiencies & Technologies</h2>
+          <p class="section-subtitle">
+            Categorized skills backed by completed projects, specialized coursework, and intensive technical training. No inflated percentage bars.
+          </p>
+        </div>
+
+        <div class="skills-categories-grid" id="skills-grid-container">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION (CROWN JEWEL)
+         ========================================================================== -->
+    <section id="projects" class="section-padding" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Engineering Portfolio</span>
+          <h2 id="projects-title" class="section-title">Featured Projects & Systems</h2>
+          <p class="section-subtitle">
+            Deep-dive into my graduation projects, research dissertations, and technical solutions. Filter by specialization below.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+          <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="cloud-data">Cloud & Data</button>
+          <button class="filter-btn" data-filter="software-web">Software & Web</button>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="projects-grid-container">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE AI DEMO LAB (RECRUITER PLAYGROUND)
+         ========================================================================== -->
+    <section id="interactive-demo-lab" class="section-padding" aria-labelledby="demos-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Interactive Lab</span>
+          <h2 id="demos-title" class="section-title">Try Live System Simulators</h2>
+          <p class="section-subtitle">
+            Experience the core algorithmic logic of my dissertation and training projects right inside your browser.
+          </p>
+        </div>
+
+        <div class="demo-lab-card">
+          <!-- Tab Navigation -->
+          <div class="demo-tabs-nav">
+            <button class="demo-tab-btn active" data-tab="morse" onclick="switchDemoTab('morse')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span>Eyelid Morse Code Assistive Simulator</span>
+            </button>
+            <button class="demo-tab-btn" data-tab="chatbot" onclick="switchDemoTab('chatbot')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              <span>FixZone AI Q&A Chatbot</span>
+            </button>
+          </div>
+
+          <div class="demo-content-body">
+            <!-- Morse Code Simulator Pane -->
+            <div id="demo-pane-morse">
+              <div class="morse-simulator-box">
+                <!-- Interactive Action Area -->
+                <div class="morse-interactive-pane">
+                  <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary);">
+                    Dissertation Algorithm Simulation: Intentional Blink Classifier
+                  </h3>
+                  <p class="morse-instructions">
+                    In my dissertation, MediaPipe Face Landmarker computes the Eye Aspect Ratio (EAR). Here, you can simulate eye blinks:
+                    <br>• <strong>Short click (&lt;380ms)</strong> = Dot (•)
+                    <br>• <strong>Long press (&gt;380ms)</strong> = Dash (—)
+                    <br>• <strong>Hold over 1.2s</strong> = <em>Delete Gesture</em> (My dissertation innovation for eyes-free error correction)
+                  </p>
+
+                  <div class="morse-trigger-zone">
+                    <button id="morse-trigger-btn" class="blink-trigger-button" aria-label="Press and hold to simulate blink">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path></svg>
+                      <span>HOLD TO BLINK</span>
+                    </button>
+                    <div id="morse-duration-indicator" class="duration-indicator">Press & hold button to test duration</div>
+                  </div>
+
+                  <div class="morse-output-display">
+                    <div class="morse-buffer-row">
+                      <span>CURRENT SYMBOL BUFFER:</span>
+                      <span id="morse-symbols-display" class="morse-current-symbols">_</span>
+                    </div>
+                    <div style="font-size: 0.775rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem;">
+                      DECODED TEXT OUTPUT (WITH AUTO-COMMIT):
+                    </div>
+                    <div id="morse-decoded-display" class="decoded-text-box">—</div>
+                  </div>
+
+                  <div class="morse-quick-actions">
+                    <button id="morse-space-btn" class="btn btn-secondary" style="font-size: 0.75rem; padding: 0.4rem 0.8rem;">
+                      [Add Space]
+                    </button>
+                    <button id="morse-clear-btn" class="morse-clear-btn">
+                      Clear Buffer
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Morse Code Quick Reference -->
+                <div class="morse-reference-pane">
+                  <div class="morse-ref-title">International Morse Code Dictionary</div>
+                  <p style="font-size: 0.775rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+                    Pausing for 0.9s automatically looks up and commits the letter into the text buffer:
+                  </p>
+                  <div class="morse-dictionary-grid" id="morse-dict-grid">
+                    <!-- Populated dynamically -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chatbot Simulator Pane -->
+            <div id="demo-pane-chatbot" style="display: none;">
+              <div class="chatbot-simulator-box">
+                <!-- Preset Queries Column -->
+                <div class="chatbot-presets-pane">
+                  <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+                    Sample Recruiters & Technical Inquiries
+                  </h3>
+                  <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 1rem;">
+                    Click any sample prompt below to simulate TF-IDF intent matching on Ramez's graduation project knowledge base:
+                  </p>
+                  <div id="chat-presets-container">
+                    <!-- Populated dynamically -->
+                  </div>
+                </div>
+
+                <!-- Chat Conversation Stream -->
+                <div class="chat-conversation-container">
+                  <div class="chat-messages-area" id="chat-messages-area">
+                    <div class="chat-msg bot">
+                      <div class="chat-msg-avatar">AI</div>
+                      <div class="chat-bubble">
+                        Hello! I am the FixZone Knowledge Assistant. You can ask me anything about Ramez's graduation project, model accuracy, damage classes, or technologies used!
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-input-bar">
+                    <input type="text" id="chat-input-field" class="chat-input-field" placeholder="Ask a question about FixZone..." aria-label="Chat input">
+                    <button id="chat-send-btn" class="chat-send-btn">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRACTICAL EXPERIENCE & TRAINING SECTION
+         ========================================================================== -->
+    <section id="experience" class="section-padding" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Hands-On Background</span>
+          <h2 id="experience-title" class="section-title">Practical Training & Internships</h2>
+          <p class="section-subtitle">
+            Real engineering experience gained through technical internships and specialized intensive training programs.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper" id="experience-timeline-container">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & CERTIFICATIONS SECTION
+         ========================================================================== -->
+    <section id="education" class="section-padding" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Academic & Credentials</span>
+          <h2 id="edu-title" class="section-title">Education & Certifications</h2>
+          <p class="section-subtitle">
+            Formal qualifications from The British University in Egypt along with certified technical programs.
+          </p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Left: Education Overview -->
+          <div class="academic-card">
+            <div class="academic-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>Accredited B.Sc. Degree</span>
+            </div>
+            <h3 class="academic-title">Bachelor of Science in Computer Engineering</h3>
+            <div class="academic-institution">The British University in Egypt (BUE) — Cairo, Egypt</div>
+            <div class="academic-meta">
+              <span>Class of 2021 – 2026</span>
+              <span class="gpa-pill">GPA: 3.1 / 4.0</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+              Comprehensive 5-year engineering curriculum integrating hardware engineering, software architecture, artificial intelligence, computer vision, and distributed computing systems.
+            </p>
+            <div class="coursework-title">Key Core Coursework</div>
+            <div class="coursework-tags">
+              <span class="course-tag">Artificial Intelligence</span>
+              <span class="course-tag">Machine Learning</span>
+              <span class="course-tag">Computer Vision</span>
+              <span class="course-tag">Data Structures & Algorithms</span>
+              <span class="course-tag">OOP (C++ & Python)</span>
+              <span class="course-tag">Databases & SQL</span>
+              <span class="course-tag">Computer Networks</span>
+              <span class="course-tag">Software Engineering</span>
+              <span class="course-tag">Microprocessors</span>
+              <span class="course-tag">HCI & Assistive Tech</span>
+              <span class="course-tag">Signal Processing</span>
+            </div>
+          </div>
+
+          <!-- Right: Certifications -->
+          <div id="certifications">
+            <div id="certifications-container">
+              <!-- Dynamically populated from data.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GITHUB INTEGRATION ("EXPLORE MY CODE")
+         ========================================================================== -->
+    <section id="github-code" class="section-padding" aria-labelledby="github-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Code Repositories</span>
+          <h2 id="github-title" class="section-title">Explore My Code</h2>
+          <p class="section-subtitle">
+            Clean code, documented architectures, and reproducible implementations hosted on GitHub.
+          </p>
+        </div>
+
+        <div class="github-repos-grid" id="github-repos-container">
+          <!-- Dynamically populated from data.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="https://github.com/RamezAshraf10-8" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>Visit @RamezAshraf10-8 on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact" class="section-padding" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pill">Get In Touch</span>
+          <h2 id="contact-title" class="section-title">Let's Build Something Intelligent.</h2>
+          <p class="section-subtitle">
+            I'm always interested in opportunities where I can apply my skills in AI, Machine Learning, Data, and Software Development while continuing to grow professionally.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Channels -->
+          <div class="contact-info-card">
+            <h3 class="contact-headline">Reach Out Directly</h3>
+            <p class="contact-subtext">
+              Whether you are looking to hire for an entry-level AI/Data/Software role or would like to discuss my technical projects, feel free to connect!
+            </p>
+
+            <div class="contact-channels-list">
+              <div class="channel-item">
+                <div class="channel-meta">
+                  <div class="channel-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Email Address</div>
+                    <div class="channel-value">rameznasr73@gmail.com</div>
+                  </div>
+                </div>
+                <button class="channel-action-btn copy-email-btn">Copy</button>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-meta">
+                  <div class="channel-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Phone</div>
+                    <div class="channel-value">+20 101 818 9406</div>
+                  </div>
+                </div>
+                <a href="tel:+201018189406" class="channel-action-btn">Call</a>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-meta">
+                  <div class="channel-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Location</div>
+                    <div class="channel-value">Rehab City, Cairo, Egypt</div>
+                  </div>
+                </div>
+                <span style="font-size: 0.775rem; color: var(--text-muted); font-family: var(--font-mono);">Open to Relocation / Remote</span>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-meta">
+                  <div class="channel-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">LinkedIn</div>
+                    <div class="channel-value">linkedin.com/in/ramez-ashraf-</div>
+                  </div>
+                </div>
+                <a href="https://linkedin.com/in/ramez-ashraf-" target="_blank" rel="noopener noreferrer" class="channel-action-btn">Connect</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.25rem;">Send a Message</h3>
+            <div id="form-status-alert" class="form-status-alert"></div>
+
+            <form id="portfolio-contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. John Doe / Sarah Jenkins" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Work / Personal Email *</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. recruiter@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message *</label>
+                <textarea id="contact-message" name="message" class="form-textarea" placeholder="Hello Ramez, we came across your AI & Computer Engineering portfolio and would love to speak regarding an opening at..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Send Message to Ramez</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo">
+            <div class="logo-symbol">RA</div>
+            <div>
+              <span class="logo-text">Ramez Ashraf Abdelmoniem</span>
+              <span class="logo-sub">Computer Engineering • AI & Machine Learning</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            Computer Engineering graduate from The British University in Egypt (BUE). Dedicated to turning machine learning research into dependable production systems.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#home">Home</a></li>
+            <li class="footer-link-item"><a href="#about">About Candidate</a></li>
+            <li class="footer-link-item"><a href="#skills">Skills & Stack</a></li>
+            <li class="footer-link-item"><a href="#projects">Key Projects</a></li>
+            <li class="footer-link-item"><a href="#experience">Internships & Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Direct Connect</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="mailto:rameznasr73@gmail.com">rameznasr73@gmail.com</a></li>
+            <li class="footer-link-item"><a href="https://linkedin.com/in/ramez-ashraf-" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+            <li class="footer-link-item"><a href="https://github.com/RamezAshraf10-8" target="_blank" rel="noopener noreferrer">GitHub Repositories</a></li>
+            <li class="footer-link-item"><a href="assets/docs/Ramez_Ashraf_CV.pdf" download>Download CV (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Ramez Ashraf Abdelmoniem. Built with engineering rigor & modern web standards.
+        </div>
+        <div class="back-to-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       RECRUITER & PROJECT DETAILS MODAL
+       ========================================================================== -->
+  <div id="recruiter-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Recruiter Fast Track</h3>
+        <div id="modal-subtitle" class="modal-subtitle">Verified Candidate Overview</div>
+      </div>
+
+      <div id="modal-dynamic-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notice Element -->
+  <div id="toast-notice" class="toast-notice" role="alert"></div>
+
+  <!-- Core JavaScript Assets -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
